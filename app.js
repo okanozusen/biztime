@@ -1,6 +1,9 @@
 const express = require("express");
 const companiesRoutes = require("./routes/companies");
 const invoicesRoutes = require("./routes/invoices");
+const industriesRoutes = require("./routes/industries");
+
+app.use("/industries", industriesRoutes);
 
 const app = express();
 
